@@ -21,8 +21,9 @@ mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 
 #docker
-apt install -y docker.io
-apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+echo 'deb [arch=amd64] https://download.docker.com/linux/debian buster stable' | sudo tee /etc/apt/sources.list.d/docker.list
+sudo apt install docker-ce -y
 
 #classic tools oriented to bugbounty
 git clone https://github.com/JoyGhoshs/0install.git
