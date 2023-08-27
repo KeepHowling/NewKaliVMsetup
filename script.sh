@@ -32,9 +32,13 @@ chmod +x 0install
 ./0install -i all
 
 #.zshrc
+git clone https://github.com/romkatv/powerlevel10k.git
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+zsh
 mkdir temp_zshrc
 cp ~/.zshrc temp_zshrc
 rm .zshrc
+cd
 wget https://github.com/KeepHowling/NewKaliVMsetup/blob/main/.zshrc
 wget https://raw.githubusercontent.com/KeepHowling/NewKaliVMsetup/main/.p10k.zsh
 zsh
