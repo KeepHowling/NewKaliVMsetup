@@ -23,7 +23,8 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 #docker
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 echo 'deb [arch=amd64] https://download.docker.com/linux/debian buster stable' | sudo tee /etc/apt/sources.list.d/docker.list
-sudo apt install docker-ce -y
+sudo apt install -y docker.io
+
 
 #classic tools oriented to bugbounty
 git clone https://github.com/JoyGhoshs/0install.git
