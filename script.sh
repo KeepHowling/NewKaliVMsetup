@@ -37,10 +37,15 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 zsh
 mkdir temp_zshrc
 cp ~/.zshrc temp_zshrc
-rm .zshrc
+cp ~/.p10k.zsh temp_zshrc
+
 cd
-wget https://github.com/KeepHowling/NewKaliVMsetup/blob/main/.zshrc
+
+rm .p10k.zsh
 wget https://raw.githubusercontent.com/KeepHowling/NewKaliVMsetup/main/.p10k.zsh
+
+rm .zshrc
+wget https://github.com/KeepHowling/NewKaliVMsetup/blob/main/.zshrc
 zsh
 
 #volatility2 y 3
