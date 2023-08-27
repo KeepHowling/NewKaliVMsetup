@@ -4,9 +4,9 @@ cd
 cd Downloads 
 
 #pimpMyKali without input --> gets root login
-wget https://raw.githubusercontent.com/KeepHowling/NewKaliVMsetup/main/pimpMyKali_VnoInput.sh 
-chmod +x pimpMyKali_VnoInput.sh
-./pimpMyKali_VnoInput.sh
+git clone https://github.com/Dewalt-arch/pimpmykali.git
+cd pimpmykali
+./pimpmykali.sh
 
 #fonts --> set them in terminal
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip
