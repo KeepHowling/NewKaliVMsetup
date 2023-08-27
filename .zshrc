@@ -260,13 +260,9 @@ alias htb='sudo openvpn /root/Downloads/KeepHowlingHTB.ovpn'
 
 alias docker_stop='docker rm -f $(docker ps -qa); docker rmi -f $(docker images -aq)'
 
-alias burpPro='cd; cd burpsuite; "/usr/lib/jvm/java-11-openjdk-amd64/bin/java" "-javaagent:burploader.jar" "-noverify" "-jar" "burpsuite_pro_v2022.9.3.jar" '
 alias enum4linux='perl ~/enum4linux.pl -A -a'
 alias dirsearch='python3 ~/dirsearch/dirsearch.py'
 alias ghidra='~/tools/ghidra_10.1.5_PUBLIC/ghidraRun'
-
-#js
-alias js_deobuscate='~/tools/de-jsfuck/run.sh'
 
 #stego
 alias sonicVisualiser='cd; ./SonicVisualiser-4.4-x86_64.AppImage'
@@ -299,7 +295,6 @@ alias mobsf='cd; cd tools; cd Mobile-Security-Framework-MobSF; ./run.sh 127.0.0.
 
 #malware analysis
 alias quickscope='python ~/Qu1cksc0pe/qu1cksc0pe.py'
-alias angr='docker run -it --rm -v $PWD:/local angr/angr'
 
 #BugBounty
 #Get all scopes
@@ -356,6 +351,10 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # Wasmer
 export WASMER_DIR="/root/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+
+VBoxClient-all
+
 
 export GOPATH=/root/go
 export GOROOT=/usr/local/go
