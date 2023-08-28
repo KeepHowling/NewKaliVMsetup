@@ -7,6 +7,7 @@ cd Downloads
 git clone https://github.com/Dewalt-arch/pimpmykali.git
 cd pimpmykali
 ./pimpmykali.sh
+N
 
 #fonts --> set them in terminal
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip
